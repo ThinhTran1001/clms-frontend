@@ -12,7 +12,7 @@ const SideBar: React.FC<SideBarProps> = ({ isVisible, onClose }) => {
         left: 0,
         width: isVisible ? '250px' : '0',
         height: '100%',
-        backgroundColor: '#B5CFB7',
+        backgroundColor: '#E7E8D8',
         overflowX: 'hidden',
         transition: '0.3s',
         paddingTop: '60px',

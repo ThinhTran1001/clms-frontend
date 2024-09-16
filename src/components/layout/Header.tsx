@@ -13,8 +13,8 @@ export default function Header({ toggleSidebar }: HeaderProps) {
     };
 
     return (
-        <header className="header text-white p-3" style={headerStyle}>
-            <nav className="navbar navbar-expand-lg navbar-dark container-fluid p-4">
+        <header className="header text-white p-2" style={headerStyle}>
+            <nav className="navbar navbar-expand-lg navbar-dark container-fluid p-3">
                 <button onClick={toggleSidebar} style={{fontSize: '20px', padding: '10px', backgroundColor: 'white', border: 'none'}}>
                     <FontAwesomeIcon icon={faBars} />
                 </button>
