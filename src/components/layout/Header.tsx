@@ -1,8 +1,15 @@
+import React from 'react';
+import { Navbar, Container } from 'react-bootstrap';
 
-export function Header(){
+const Header: React.FC = () => {
     return (
-        <div>
+        <Navbar bg="primary" variant="dark" expand="lg">
+            <Container>
+                <Navbar.Brand href="/">CLMS</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            </Container>
+        </Navbar>
+    );
+};
 
-        </div>
-    )
-}
+export default Header;
