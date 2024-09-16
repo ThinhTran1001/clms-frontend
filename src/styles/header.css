@@ -1,3 +1,38 @@
-.header {
-    background-color: #BC9F8B;
+body {
+    transition: margin-left 0.5s; /* Hiệu ứng chuyển động khi sidebar đẩy nội dung */
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #B5CFB7;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidebar.visible {
+    width: 250px;
+}
+
+.sidebar a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
 }
