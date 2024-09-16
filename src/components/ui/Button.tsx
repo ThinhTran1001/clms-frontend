@@ -1,4 +1,14 @@
+import React from 'react';
 
-export default function Button(){
+interface ButtonProps {
+    children: React.ReactNode;
+  }
 
-}
+const Button: React.FC<ButtonProps> = ({children}) => {
+    const buttonStyle: React.CSSProperties = {
+        backgroundColor: "#B5CFB7",
+    }
+  return <button className="btn" style={buttonStyle}>{ children }</button>;
+};
+
+export default Button;
