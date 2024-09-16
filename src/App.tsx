@@ -1,13 +1,14 @@
 import React from 'react';
-import { Footer } from './components/layout/Footer';
-import { Layout } from './components/layout/Layout';
-import Header from "./components/layout/Header";
+import  Layout  from './components/layout/Layout';
+import LandingPage from './features/landing_page/LandingPage';
 
 
 function App() {
   return (
     <div className="App">
-      <Layout />
+      <Layout>
+        <LandingPage />
+    </Layout>
     </div>
   );
 }
